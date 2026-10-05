@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LAST TRAM — A Pixel Story</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <section class="hero">
+      <img src="assets/tram-forest.png" alt="Pixel-art tram surrounded by an overgrown forest">
+      <div class="overlay"></div>
+      <div class="title">
+        <p class="eyebrow">A SMALL INTERACTIVE PIXEL STORY</p>
+        <h1>LAST TRAM</h1>
+        <p class="subtitle">The city disappeared. The tracks remembered the way.</p>
+        <button id="start">ENTER THE TRAM</button>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <div class="story-card">
+        <span class="chapter" id="chapter">CHAPTER 01</span>
+        <h2 id="heading">The doors are still open.</h2>
+        <p id="text">
+          No timetable. No driver. Only warm sunlight, old rails and a tram
+          that should have been abandoned years ago.
+        </p>
+        <div class="choices" id="choices">
+          <button data-next="forest">Follow the tracks</button>
+          <button data-next="tram">Search the tram</button>
+        </div>
+        <p class="ending" id="ending"></p>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
